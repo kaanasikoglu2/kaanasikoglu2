@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Items</title>
+		<link rel="icon" href="images/picture.ico" type="image/x-icon" />
+	<style>
+		body{
+			background-color: #282828;
+		}
+		#navbar {
+			overflow:hidden;
+			background-color: #5C5B58;
+			margin-top: -10px;
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+		#navbar a {
+			float: left;
+			display: block;
+			color: #e7e7e7;
+			font-family: Arial;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+			padding-top: 30px;
+		}
+		.content {
+			padding: 0px;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.sticky + .content {
+			padding-top: 60px;
+		}
+		#logoes a{
+			float: right;
+			margin-top: -10px;
+		}
+		#logoes img{
+			width: 34px;
+			height: 34px;
+		}	
+		.items{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p{
+			color: #e7e7e7;
+			font-family: Arial;
+			margin-left: 0px;
+			margin-right: 0px;
+			font-size: 14px;
+		}
+		h1{
+			color: #e7e7e7;
+			font-family: Arial;
+			padding-top: 10px;
+			text-align:center;
+		}
+		footer {
+			font-size:70%;
+			font-family: Arial;
+			text-align: right;
+			clear: right;
+			padding: 20px;
+			color: #e7e7e7;
+			background-color: #282828;
+			margin-left: -10px;
+			margin-right: -10px;
+			margin-bottom: -10px;
+		}	
+	</style>
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="index.html">Home</a>
+			<a href="heroes.html">Heroes</a>
+			<a href="items.html">Items</a>
+			<a href="basics.html">Basics</a>
+			<a href="contact_us.html">Contact us</a>
+			<div id="logoes">
+				<a href="https://discord.gg/JWF57JHR2V">
+					<img src="images/discord.png" alt="discord">
+				</a>
+				<a href="https://www.patreon.com/random_defense_adventure">
+					<img src="images/patreon.png" alt="patreon">
+				</a>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2326145404">
+					<img src="images/steam.png" alt="steam">
+				</a>
+			</div>
+		</nav>
+	<main class="content">
+		<h1>Items</h1>
+		<img src="images/items.png" alt="" class="items">
+		<p>There are normal Dota 2 items in the game. Moreover, there is some extra items added.<br>- STR/AGI/INT Books<br>- Warrior/Assasin/Mage hearts<br>- Items for middle player<br>- Transform a pet items</p>
+		<h1>Every item can upgradeable to its next generation. For learning these upgrades please check <a href="basics.html" style="color: #e7e7e7">Basics Section</a></h1>
+	</main>
+	<footer>
+		Berke Kaan Aşıkoğlu &copy; 2021
+	</footer>
+	<script>
+			window.onscroll = function() {myFunction()};
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+			function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+				} 
+			else {
+				navbar.classList.remove("sticky");
+				}
+			}
+	</script>
+	</body>
+</html>
